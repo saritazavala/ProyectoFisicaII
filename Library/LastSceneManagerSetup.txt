@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Real-Time Procedural Cable Simple/ExampleScene/Example_Scene.unity
+  isLoaded: 1
+  isActive: 1
