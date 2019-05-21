@@ -61,6 +61,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\cuerda.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\PlatformController.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\RuntimeCableGenerator.cs" />
+    <Compile Include="Assets\FiloCables\SampleScenes\Scripts\SpoolController.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableBody.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableDisc.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CablePoint.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\CableShape.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Bodies\ConvexHull2D.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Cable.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableJoint.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableRenderer.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableSection.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\CableSolver.cs" />
+    <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
+    <None Include="Assets\FiloCables\CHANGELOG.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/jdieg/Fisica/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
