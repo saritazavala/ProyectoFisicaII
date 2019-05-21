@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuVaria.unity
+    guid: aefd3d48857d613409885afa4b2afa64
+  - enabled: 1
+    path: Assets/Scenes/Polea.unity
+    guid: 828dce6e97b944324a8992098608b274
   m_configObjects: {}

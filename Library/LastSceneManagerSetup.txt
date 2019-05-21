@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Polea.unity
-=======
-- path: Assets/Simulacion2/Assets/Scenes/Sistema1.unity
->>>>>>> abd5ebed9c195fd2221f7c3bef8875fbe7999ae7
+- path: Assets/Scenes/MenuVaria.unity
   isLoaded: 1
   isActive: 1
