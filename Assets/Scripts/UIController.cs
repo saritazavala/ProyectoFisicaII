@@ -19,6 +19,10 @@ public class UIController : MonoBehaviour
         double b = variables.m2*9.8;
         double sumatoria = a - b;
         GameObject.Find("sumatoria").GetComponent<Text>().text = "Sumatoria de fuerzas: " + sumatoria + " N";
+        double arriba = b - a;
+        double abajo = variables.m1 + variables.m2;
+        double aceleracion = arriba / abajo;
+        GameObject.Find("ace").GetComponent<Text>().text = "Aceleracion: " + aceleracion + " m/s^2";
     }
 
     // Update is called once per frame

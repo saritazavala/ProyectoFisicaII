@@ -74,6 +74,7 @@
     <Compile Include="Assets\FiloCables\Scripts\CableSection.cs" />
     <Compile Include="Assets\FiloCables\Scripts\CableSolver.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
+    <Compile Include="Assets\InicioPlano.cs" />
     <Compile Include="Assets\Scripts\cubo.cs" />
     <Compile Include="Assets\Scripts\cubo2.cs" />
     <Compile Include="Assets\Scripts\cuerda.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\Caja.cs" />
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\Controladoe2.cs" />
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\Controlador.cs" />
+    <Compile Include="Assets\Simulacion2\Assets\Scripts2\dcl1.cs" />
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\friccion.cs" />
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\masV.cs" />
     <Compile Include="Assets\Simulacion2\Assets\Scripts2\Variables2.cs" />
