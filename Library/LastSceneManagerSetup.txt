@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MenuVaria.unity
+- path: Assets/Simulacion2/Assets/Scenes/Sistemacon2.unity
   isLoaded: 1
   isActive: 1
