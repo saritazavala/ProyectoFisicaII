@@ -14,6 +14,7 @@ public class masV : MonoBehaviour
     public InputField var2;
     public InputField fr;
     public InputField fr2;
+    public static int angulo;
     // Start is called before the first frame update
     public void inicio()
     {
@@ -25,5 +26,17 @@ public class masV : MonoBehaviour
 
 
         SceneManager.LoadScene("Sistemacon2");
+    }
+    public void treinta()
+    {
+        angulo = 30;
+    }
+    public void cuearenta()
+    {
+        angulo = 45;
+    }
+    public void sesenta()
+    {
+        angulo = 60;
     }
 }

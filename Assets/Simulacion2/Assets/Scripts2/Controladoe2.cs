@@ -10,6 +10,7 @@ public class Controladoe2 : MonoBehaviour
     public static bool isPaused;
     public Collider caja;
     public Collider caja2;
+    public static int angulo;
 
 
     // Start is called before the first frame update
@@ -21,8 +22,8 @@ public class Controladoe2 : MonoBehaviour
         double peso = masV.m1 * 9.8;
         double peso2 = masV.m2 * 9.8;
         float mu = masV.f;
-        double Fx = (peso * Mathf.Sin(45));
-        double Fy = (peso * Mathf.Cos(45));
+        double Fx = (peso * Mathf.Sin(Variables2.angulo));
+        double Fy = (peso * Mathf.Cos(Variables2.angulo));
         double Fr = mu * Fy;
 
         //aceleracion masa 1
@@ -30,10 +31,11 @@ public class Controladoe2 : MonoBehaviour
         double ace = (Fx - Fr) / masV.m1;
 
 
-        double Fx2 = (peso2 * Mathf.Sin(45));
-        double Fy2 = (peso2 * Mathf.Cos(45));
+        double Fx2 = (peso2 * Mathf.Sin(masV.angulo));
+        double Fy2 = (peso2 * Mathf.Cos(masV.angulo));
         double Fr2 = mu * Fy2;
         double ace2 = (Fr2 - Fx2) / masV.m2;
+
         //a2 = (Fr2 - fx2 )/ m2
 
 
@@ -46,7 +48,7 @@ public class Controladoe2 : MonoBehaviour
         GameObject.Find("Peso2").GetComponent<Text>().text = "Peso2: " + masV.m2 * 9.8 + " N";
         GameObject.Find("CoeficienteFriccion").GetComponent<Text>().text = "Coeficiente de Friccion 1: " + masV.f;
         GameObject.Find("fri").GetComponent<Text>().text = "Coeficiente de Friccion 2: " + masV.f2;
-        GameObject.Find("Angulo").GetComponent<Text>().text = "Angulo: 45°";
+        GameObject.Find("Angulo").GetComponent<Text>().text = "Angulo: "+ masV.angulo;
         GameObject.Find("Aceleracion1").GetComponent<Text>().text = "Aceleracion1: " + ""+ ace + " m/s^2 ";
         GameObject.Find("Aceleracion2").GetComponent<Text>().text = "Aceleracion2: " + "" + ace2 + " m/s^2 ";
 
@@ -54,6 +56,7 @@ public class Controladoe2 : MonoBehaviour
         //GameObject.Find("sumatoria").GetComponent<Text>().text = "Sumatoria de fuerzas: " + sumatoria + " N";
 
         caja.material.dynamicFriction = mu;
+
     }
 
     void Update()

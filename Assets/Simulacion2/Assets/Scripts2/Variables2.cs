@@ -11,6 +11,7 @@ public class Variables2 : MonoBehaviour
     public static float f2;
     public InputField var1;
     public InputField fr;
+    public static int angulo;
     //public InputField fr2;
     // Start is called before the first frame update
     public void inicio()
@@ -21,5 +22,17 @@ public class Variables2 : MonoBehaviour
 
 
         SceneManager.LoadScene("Sistema1");
+    }
+    public void treinta()
+    {
+        angulo = 30;
+    }
+    public void cuearenta()
+    {
+        angulo = 45;
+    }
+    public void sesenta()
+    {
+        angulo = 60;
     }
 }

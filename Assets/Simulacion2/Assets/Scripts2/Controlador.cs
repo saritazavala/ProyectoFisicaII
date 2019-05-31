@@ -20,8 +20,8 @@ public class Controlador : MonoBehaviour
         pauseUI.SetActive(false);
         double peso = Variables2.m1 * 9.8;
         float mu = Variables2.f;
-        double Fx = (peso * Mathf.Sin(45));
-        double Fy = (peso * Mathf.Cos(45));
+        double Fx = (peso * Mathf.Sin(Variables2.angulo));
+        double Fy = (peso * Mathf.Cos(Variables2.angulo));
         double Fr = mu * Fy;
         double ace = (Fx - Fr) / Variables2.m1;
         //double Fr = (Variables2.f*)
@@ -31,7 +31,7 @@ public class Controlador : MonoBehaviour
         GameObject.Find("Peso").GetComponent<Text>().text = "Peso: " + Variables2.m1 * 9.8 + " N";
         GameObject.Find("CoeficienteFriccion").GetComponent<Text>().text = "Coeficiente de Friccion 1: " + Variables2.f;
 
-        GameObject.Find("Angulo").GetComponent<Text>().text = "Angulo: 45°";
+        GameObject.Find("Angulo").GetComponent<Text>().text = "Angulo: "+ Variables2.angulo;
         GameObject.Find("Aceleracion").GetComponent<Text>().text = "Aceleracion:"+ ace + ""+ " m/s^2 ";
         //a = (Fx - Fr)/m
         //GameObject.Find("sumatoria").GetComponent<Text>().text = "Sumatoria de fuerzas: " + sumatoria + " N";
